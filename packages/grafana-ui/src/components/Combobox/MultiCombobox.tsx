@@ -189,6 +189,7 @@ export const MultiCombobox = <T extends string | number>(props: MultiComboboxPro
     inputValue,
     selectedItem: null,
     isItemDisabled: (item) => !!item?.infoOption,
+    scrollIntoView: () => {},
     stateReducer: (state, actionAndChanges) => {
       const { type } = actionAndChanges;
       let { changes } = actionAndChanges;
